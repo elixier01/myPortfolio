@@ -2,9 +2,9 @@
 :root {
     font-size: 16px; /* can be modified to change all em values*/
     --head: white;
-    --text: #72ece2;
-    --headHover:#cfac6e;
-    --textHover: #9c7764;
+    --text: #000000;
+    --title:#00fce7;
+    --mainBackground: #ffffff;
   }
 
 /* Global Reset */
@@ -24,7 +24,7 @@ nav img:hover{
     margin: 12px 18px;
     cursor: pointer;
 }
-h1,
+header h1,
 h2,
 h3 {
     line-height: 1.5;
@@ -60,6 +60,7 @@ body {
 .centered {
     margin: 0 auto;
     max-width: 1600px;
+    text-align: center;
 }
 
 header h1 {
@@ -81,6 +82,7 @@ header h4 {
     font-size: 1.8em;
     transition: transform .5s;
     max-width: max-content;
+    color: #00fce7;
 
 }
 header h4:hover {
@@ -101,4 +103,54 @@ header h4:hover {
 #scroll__arrow:hover {
     cursor: pointer;
     transform: scaleY(1.1);
+}
+
+span { 
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: .1; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+#main {
+    position: absolute;
+    top: 100vh;
+    color: var(--text);
+    background-color: var(--mainBackground);
+    height: 100vh;
+    width: 100%;
+}
+
+.main__heading {
+    color: var(--title);
+    text-shadow: 0 0 2.5px var(--text);
+    font-size: 3em;
+    margin: 5vh auto;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 25vw;
+    height: 25vh;
+    margin: 5vh auto 5vw;
+}
+
+.imgg {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 5px 5px rgb(124, 124, 124);
+
 }
