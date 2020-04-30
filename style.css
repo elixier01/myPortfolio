@@ -1,0 +1,104 @@
+/*Variables*/
+:root {
+    font-size: 16px; /* can be modified to change all em values*/
+    --head: white;
+    --text: #72ece2;
+    --headHover:#cfac6e;
+    --textHover: #9c7764;
+  }
+
+/* Global Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+nav {
+    float: right;
+}
+nav img{
+    max-height: 50px;
+    margin: 15px 20px;
+    background-color: none;
+    transition: max-height 0.3s, margin 0.3s;
+}
+nav img:hover{
+    max-height: 54px;
+    margin: 12px 18px;
+    cursor: pointer;
+}
+h1,
+h2,
+h3 {
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    color: var(--head);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    color: var(--text);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.splash__icon {
+    filter: invert(1);
+    height: 75px;
+}
+#splash__image {
+    width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    filter: brightness(45%);
+    z-index: -1;
+    position: absolute;
+}
+
+.splash__intro {
+    position: relative;
+    left: 15vw;
+    max-width: 800px;
+    top: 30vh;
+}
+.centered {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+header h1 {
+    font-size: 4em;
+    position: relative;
+}
+
+header h2 {
+    font-size: 2em;
+    position: relative;
+}
+
+header h3 {
+    font-size: 1.5em;
+}
+
+header h4 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    transition: transform .5s;
+    max-width: max-content;
+
+}
+header h4:hover {
+    transform: scaleY(1.3);
+    cursor: pointer;
+}
+
+#scroll__arrow {
+    top: 90vh;
+    left: 48.5vw;
+    position: absolute;
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    transition: transform .5s;
+}
+
+#scroll__arrow:hover {
+    cursor: pointer;
+    transform: scaleY(1.1);
+}
