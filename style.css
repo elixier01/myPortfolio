@@ -139,20 +139,45 @@ span {
     width: 100%;
 }
 
-.container {
+.project-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.box {
+.project-box {
     width: 25vw;
     height: 25vh;
     margin: 5vh auto 5vw;
 }
 
-.imgg {
+.project-img {
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 5px 5px var(--title);
+    box-shadow: 2px 2px 5px var(--head);
 
+}
+
+#footer {
+    width: 100%;
+    top: 200vh;
+    position: absolute;
+    height: 50vh;
+    background-color:var(--mainBackground);
+}
+
+#skills {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+}
+
+#skills img {
+    box-sizing: content-box;
+    padding: 30px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
