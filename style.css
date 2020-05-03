@@ -178,15 +178,18 @@ span {
 
 #skills img {
     box-sizing: content-box;
-    padding: 45px;
+    padding: 50px;
     margin: auto;
     height: 100px;
     width: 100px;
-    border-radius: 50%;
 }
 
 #footnote {
     height: 33vh;
     width: 100%;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(51, 51, 51);
+}
+
+footer h1 {
+    padding-bottom: 0;
 }
