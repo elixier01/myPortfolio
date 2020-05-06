@@ -147,8 +147,9 @@ span {
 }
 
 .project-box {
-    width: 25vw;
+    width: 450px;
     height: 25vh;
+    padding: 0 25px;
     margin: 5vh auto 5vw;
 }
 
@@ -173,6 +174,7 @@ span {
     height: 100px;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
 }
 
